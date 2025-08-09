@@ -1,0 +1,137 @@
+html {
+  display: table;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+h1, h2, h3 {
+    margin-top: 50px; /* Отступ сверху */
+}
+
+.glow-button {
+    padding: 24px 450px;
+    border: none;
+    border-radius: 50px;
+    
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+    background-size: 200% auto; /* Нужно для анимации */
+    
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.glow-button:hover {
+    background-position: right center;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 210, 255, 0.6);
+}
+
+.glow-button.active {
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.laungru-button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+    background-size: 200% auto;
+    
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+    
+    position: fixed;
+    left: 30px;
+    bottom: 1030px;
+}
+
+.laungru-button:hover {
+    background-position: left center;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 210, 255, 0.6);
+}
+
+.laungru-button.active {
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.laungen-button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+    background-size: 200% auto;
+    
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+    
+    position: fixed;
+    left: 30px;
+    bottom: 820px;
+}
+
+.laungen-button:hover {
+    background-position: left center;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 210, 255, 0.6);
+}
+
+.laungen-button.active {
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
