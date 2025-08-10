@@ -30,5 +30,18 @@ document.addEventListener('DOMContentLoaded', function(){
     } else {
         SWObutton.textContent = 'фанфики с WaterBucket и Error';
     }
+    
+    let count = localStorage.getItem('visitCount');
+    
+    if (!count) {
+        count = 0;
+    }
+    
+    count++
+    
+    localStorage.setItem('visitCount', count);
+    
+    document.getElementById('vc').textContent = count;
+    
     })
 });
