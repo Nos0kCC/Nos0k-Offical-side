@@ -10,20 +10,16 @@ body {
   vertical-align: middle;
 }
 
-h1 {
-  color: white;
-}
-
-h2 {
+h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
-h3 {
-    color: white;
+h1, h2, h3, h4 {
+    margin-top: 30px;
 }
 
-h1, h2, h3 {
-    margin-top: 50px; /* Отступ сверху */
+.glow-button, .glow-tgbutton, .glow-STGbutton, .glow-SDbutton {
+    margin-top: 10px;
 }
 
 .glow-button {
@@ -37,7 +33,7 @@ h1, h2, h3 {
     text-transform: uppercase;
     
     background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
-    background-size: 200% auto; /* Нужно для анимации */
+    background-size: 200% auto;
     
     box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
     cursor: pointer;
@@ -51,6 +47,142 @@ h1, h2, h3 {
 }
 
 .glow-button.active {
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glow-tgbutton {
+    padding: 24px 450px;
+    border: none;
+    border-radius: 50px;
+    
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+    background-size: 200% auto;
+    
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.glow-tgbutton:hover {
+    background-position: right center;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 210, 255, 0.6);
+}
+
+.glow-tgbutton.active {
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glow-STGbutton {
+    padding: 24px 450px;
+    border: none;
+    border-radius: 50px;
+    
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+    background-size: 200% auto;
+    
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.glow-STGbutton:hover {
+    background-position: right center;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 210, 255, 0.6);
+}
+
+.glow-STGbutton.active {
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glow-SDbutton {
+    padding: 24px 450px;
+    border: none;
+    border-radius: 50px;
+    
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+    background-size: 200% auto;
+    
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.glow-SDbutton:hover {
+    background-position: right center;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 210, 255, 0.6);
+}
+
+.glow-SDbutton.active {
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glow-FFbutton {
+    padding: 24px 450px;
+    border: none;
+    border-radius: 50px;
+    
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+    background-size: 200% auto;
+    
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.glow-FFbutton:hover {
+    background-position: right center;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 210, 255, 0.6);
+}
+
+.glow-FFbutton.active {
     animation: gradientFlow 3s ease infinite;
 }
 
@@ -76,10 +208,6 @@ h1, h2, h3 {
     box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
     cursor: pointer;
     transition: 0.5s;
-    
-    position: fixed;
-    left: 30px;
-    bottom: 1030px;
 }
 
 .laungru-button:hover {
@@ -114,10 +242,6 @@ h1, h2, h3 {
     box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
     cursor: pointer;
     transition: 0.5s;
-    
-    position: fixed;
-    left: 30px;
-    bottom: 820px;
 }
 
 .laungen-button:hover {
